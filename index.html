@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flix (학습용)</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main_responsive.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <!-- 웹 폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean" rel="stylesheet" />
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/0ac9b1c2eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <aside class="popup">
+            <button class="cancle_btn"><i class="fa-solid fa-xmark"></i></button>
+            <p>
+                이 사이트는 학습용으로 제작했으며 넷플릭스 사이트와는 상관 없으며 상업적 목적이 없는 포트폴리오 사이트입니다. <br /><br />
+                This is a portfolio site built for learning and has no commercial purpose.
+            </p>
+        </aside>
+        <!-- header -->
+        <header id="header">
+            <div class="row">
+                <div class="header">
+                    <!-- nav -->
+                    <nav class="nav">
+                        <h1 class="logo">FLIX</h1>
+                        <div class="hd-select">
+                            <label for="lang" class="ir_so">언어</label>
+                            <select id="lang" name="lang" class="lang-select">
+                                <option selected="" lang="ko" value="/kr/" data-language="ko" data-country="KR">한국어</option>
+                                <option lang="en" value="/kr-en/" data-language="en" data-country="KR">English</option>
+                            </select>
+                        </div>
+                        <div class="login">
+                            <a class="login-btn" href="login.html">로그인</a>
+                        </div>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- card-text -->
+        <section id="card-text">
+            <div class="container">
+                <div class="row">
+                    <div class="card-text">
+                        <h2 class="text-tit">
+                            넷플릭스와는 무관한<br />
+                            연습용 사이트입니다.
+                        </h2>
+                        <ul class="text-subtit">
+                            <li>It is not a site for commercial purposes.</li>
+                        </ul>
+                        <p class="text-desc">
+                            시청할 준비가 되셨나요? 멤버십을 등록하거나<br />
+                            재시작하려면 이메일 주소를 입력하세요.
+                        </p>
+                    </div>
+                    <div class="text-email-place">
+                        <!-- 검색 폼 -->
+                        <form action="get" method="post" name="text-email-form" id="email-form">
+                            <fieldset>
+                                <legend class="ir_so">이메일 입력 영역</legend>
+                                <div class="text-email">
+                                    <label for="email" class="ir_so">이메일 입력</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="input-email"
+                                        name="email"
+                                        maxlength="40"
+                                        placeholder="이메일 주소"
+                                    />
+                                    <button class="sc-btn" type="submit" disabled>
+                                        <span>시작하기</span><i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <!-- //검색 폼 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //card-text -->
+        <!-- main -->
+        <main>
+            <!-- card-tv -->
+            <section id="card-tv">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-tv">
+                            <div class="card-tv-left">
+                                <h2 class="tv-tit">TV로 즐기세요.</h2>
+                                <h3 class="tv-subtit">
+                                    스마트 TV, PlayStation, Xbox, Chromecast,<br />
+                                    Apple TV, 블루레이 플레이어 등 다양한<br />
+                                    디바이스에서 시청하세요.
+                                </h3>
+                            </div>
+                            <div class="card-tv-right">
+                                <div class="tv-animation-container">
+                                    <img class="tv-img" src="img/tv.png" alt="tv" />
+                                    <div class="tv-animation">
+                                        <video class="video-1" data-uia="video-1" autoplay="" playsinline="" muted="" loop="">
+                                            <source
+                                                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //card-tv -->
+            <!-- card-download -->
+            <section id="card-download">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-download">
+                            <div class="card-download-left">
+                                <img src="img/mobile-0819.jpg" alt="mobile" />
+                                <div class="download-animation">
+                                    <div class="dl-img">
+                                        <img src="img/boxshot.png" alt="boxshot" />
+                                    </div>
+                                    <div class="dl-desc">
+                                        <p>기묘한 이야기<br /><span>저장중...</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-download-right">
+                                <h2 class="download-tit">즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h2>
+                                <h3 class="download-subtit">간편하게 저장하고 빈틈없이 즐겨보세요.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //card-download -->
+            <!-- card-watch -->
+            <section id="card-watch">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-watch">
+                            <div class="card-watch-left">
+                                <h2 class="watch-tit">다양한 디바이스에서 시청하세요.</h2>
+                                <h3 class="watch-subtit">
+                                    각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀
+                                    없습니다.
+                                </h3>
+                            </div>
+                            <div class="card-watch-right">
+                                <div class="watch-animation-container">
+                                    <img class="watch-img" src="img/device-pile.png" alt="watch" />
+                                    <div class="watch-animation">
+                                        <video class="video-2" data-uia="video-2" autoplay="" playsinline="" muted="" loop="">
+                                            <source
+                                                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //card-watch -->
+            <section id="card-kids">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-kids">
+                            <div class="card-kids-left">
+                                <img src="img/kids.png" alt="kids" />
+                            </div>
+                            <div class="card-kids-right">
+                                <h2 class="kids-tit">어린이 전용 프로필을 만들어 보세요.</h2>
+                                <h3 class="kids-subtit">
+                                    자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 플릭스
+                                    회원이라면 무료입니다.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- //main -->
+        <!-- question -->
+        <section id="question">
+            <div class="container">
+                <div class="row">
+                    <div class="question">
+                        <h2 class="question-tit">자주 묻는 질문</h2>
+                        <div class="question-container">
+                            <ul class="question-btn">
+                                <li>
+                                    <button id="qs-btn1" class="qs-btn">
+                                        플릭스란 무엇인가요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer1" class="answer">
+                                        <p>
+                                            플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷
+                                            연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br /><br />저렴한 월
+                                            요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가
+                                            준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="qs-btn2" class="qs-btn">
+                                        플릭스 요금은 얼마인가요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer2" class="answer">
+                                        <p>
+                                            스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로
+                                            플릭스를 시청하세요. 멤버십 요금은 월 9,500원부터 17,000원까지 다양합니다. 추가 비용이나 약정이
+                                            없습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="qs-btn3" class="qs-btn">
+                                        어디에서 시청할 수 있나요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer3" class="answer">
+                                        <p>
+                                            언제 어디서나 시청할 수 있습니다. 플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로
+                                            시청할 수 있으며, 인터넷이 연결되어 있고 플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰,
+                                            태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br /><br />iOS,
+                                            Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동
+                                            중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 플릭스는 어디서든 함께니까요.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="qs-btn4" class="qs-btn">
+                                        멤버십을 해지하려면 어떻게 하나요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer4" class="answer">
+                                        <p>
+                                            플릭스는 부담 없이 간편합니다. 성가신 계약도, 약정도 없으니까요. 멤버십 해지도 온라인에서 클릭
+                                            두 번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을 시작하거나 종료하세요.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="qs-btn5" class="qs-btn">
+                                        플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer5" class="answer">
+                                        <p>
+                                            플릭스는 장편 영화, 다큐멘터리, 시리즈, 애니메이션, 각종 상을 수상한 플릭스 오리지널 등 수많은
+                                            콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하세요.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button id="qs-btn6" class="qs-btn">
+                                        아이들이 플릭스를 봐도 좋을까요?
+                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                            <path
+                                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                    <div id="answer6" class="answer">
+                                        <p>
+                                            멤버십에 플릭스 키즈 환경이 포함되어 있어 자녀가 자기만의 공간에서 가족용 시리즈와 영화를 즐기는
+                                            동안 부모가 이를 관리할 수 있습니다.<br /><br />키즈 프로필과 더불어 PIN 번호를 이용한 자녀 보호
+                                            기능도 있어, 자녀가 시청할 수 있는 콘텐츠의 관람등급을 제한하고 자녀의 시청을 원치 않는 특정
+                                            작품을 차단할 수도 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="question-text">
+                                <h3 class="text-tit">
+                                    시청할 준비가 되셨나요? 멤버십을 등록하거나<br />
+                                    재시작하려면 이메일 주소를 입력하세요.
+                                </h3>
+                            </div>
+                            <div class="question-text-email-place">
+                                <!-- 검색 폼 -->
+                                <form action="get" method="post" name="text-email-form" id="email-form2">
+                                    <fieldset>
+                                        <legend class="ir_so">이메일 입력 영역</legend>
+                                        <div class="text-email">
+                                            <label for="email2" class="ir_so">이메일 입력</label>
+                                            <input
+                                                type="text"
+                                                id="email2"
+                                                class="input-email"
+                                                name="email"
+                                                maxlength="40"
+                                                placeholder="이메일 주소"
+                                            />
+                                            <button class="sc-btn" type="submit" disabled>
+                                                <span>시작하기</span><i class="fa-solid fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <!-- //검색 폼 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //question -->
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="footer">
+                            <h4 class="footer-top">질문이 있으신가요? 문의 전화: &nbsp;<a href="#">080-123-4567</a></h4>
+                            <ul class="footer-infor clearfix">
+                                <li class="infor-link"><a href="#">자주 묻는 질문</a></li>
+                                <li class="infor-link"><a href="#">고객 센터</a></li>
+                                <li class="infor-link"><a href="#">계정</a></li>
+                                <li class="infor-link"><a href="#">미디어 센터</a></li>
+                                <li class="infor-link"><a href="#">투자 정보(IR)</a></li>
+                                <li class="infor-link"><a href="#">입사 정보</a></li>
+                                <li class="infor-link"><a href="#">플릭스 지원 디바이스</a></li>
+                                <li class="infor-link"><a href="#">이용 약관</a></li>
+                                <li class="infor-link"><a href="#">개인정보쿠키</a></li>
+                                <li class="infor-link"><a href="#">설정</a></li>
+                                <li class="infor-link"><a href="#">회사 정보</a></li>
+                                <li class="infor-link"><a href="#">문의하기</a></li>
+                                <li class="infor-link"><a href="#">속도 테스트</a></li>
+                                <li class="infor-link"><a href="#">법적 고지</a></li>
+                                <li class="infor-link"><a href="#">오직 플릭스에서</a></li>
+                            </ul>
+                            <div class="ft-select">
+                                <label for="lang2" class="ir_so">언어</label>
+                                <select id="lang2" name="lang" class="lang-select">
+                                    <option selected="" lang="ko" value="/kr/" data-language="ko" data-country="KR">한국어</option>
+                                    <option lang="en" value="/kr-en/" data-language="en" data-country="KR">English</option>
+                                </select>
+                            </div>
+                            <p class="footer-country">플릭스 대한민국</p>
+                            <div class="footer-copy">
+                                <ul>
+                                    <li>플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-가나다로-0426호 전화번호: 080-123-4567</li>
+                                    <li>대표: 김아무개</li>
+                                    <li>이메일 주소: example@naver.com</li>
+                                    <li>주소: 대한민국 서울특별시 종로구</li>
+                                    <li>사업자등록번호: 000-00-00000</li>
+                                    <li>클라우드 호스팅: junho Web Services Inc.</li>
+                                    <li>플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-가나다로-0426호 전화번호: 080-123-4567</li>
+                                    <li><a href="#">공정거래위원회 웹사이트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+        <!-- script -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

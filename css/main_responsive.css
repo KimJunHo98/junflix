@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* 미디어쿼리 */
+@media all and (max-width: 1200px){
+    /* 가운데 영역 */
+    .container { width: 100%; }
+
+    /* header */
+    .header .nav #logo { width: 160px; }    
+}
+
+@media all and (max-width: 960px){
+    /* header */
+    #header { height: 100vh; }
+    .header .nav #logo { width: 140px; }  
+    .header .nav .select { padding-top: 14px; }
+    .header .nav .login { padding-top: 23px; }
+
+    /* card-text */
+    .card-text .text-subtit li { font-size: 1.6rem; font-weight: 400; }
+    .card-text .text-desc { font-size: 1.4rem; font-weight: 400; letter-spacing: 1px; line-height: 30px; }
+    .card-text .text-desc br { display: block; }
+    .text-email-place .text-email input { margin-bottom: 15px; padding: 13px 10px; }
+    .text-email-place .text-email .sc-btn { display: block; margin: 0 auto; padding: 13px 20px; border-radius: 3px; }
+
+    /* card-tv */
+    .card-tv { flex-direction: column; }
+    .card-tv .card-tv-left { margin-right: 0; width: 100%; }
+    .card-tv .card-tv-left .tv-tit { font-size: 2.5rem; font-weight: 600; padding-bottom: 20px; text-align: center; }
+    .card-tv .card-tv-left .tv-subtit { font-size: 1.25rem; text-align: center; }
+    .card-tv .card-tv-left .tv-subtit br { display: none; }
+    .card-tv .card-tv-right { width: 100%; }
+    .card-tv .card-tv-right .tv-animation-container { width: 70%; }
+
+    /* card-download */
+    .card-download { flex-direction: column-reverse; }
+    .card-download .card-download-left { width: 65%; height: auto; }
+    .card-download .card-download-right { width: 100%; padding-left: 0; }
+    .card-download .card-download-right .download-tit { font-size: 2.5rem; font-weight: 600; padding-bottom: 20px; text-align: center; }
+    .card-download .card-download-right .download-subtit { font-size: 1.25rem; text-align: center; }
+
+    /* card-watch */
+    .card-watch { flex-direction: column; }
+    .card-watch .card-watch-left { width: 100%; }
+    .card-watch .card-watch-left .watch-tit { font-size: 2.5rem; font-weight: 600; padding-bottom: 20px; text-align: center; }
+    .card-watch .card-watch-left .watch-subtit { font-size: 1.25rem; text-align: center; }
+    .card-watch .card-watch-right { width: 100%; }
+
+    /* card-kids */
+    .card-kids { flex-direction: column-reverse; }
+    .card-kids .card-kids-left { width: 100%; } 
+    .card-kids .card-kids-right { width: 100%; }
+    .card-kids .card-kids-right .kids-tit { font-size: 2.5rem; font-weight: 600; padding-bottom: 20px; text-align: center; }
+    .card-kids .card-kids-right .kids-subtit { font-size: 1.25rem; text-align: center; }
+
+    /* question */
+    .question .question-tit { font-size: 2.5rem; font-weight: 600; }
+    .question .question-container .question-btn { margin: 30px auto; width: 90%; }
+    .question .question-container .question-btn li > button { padding: 18px 44px 18px 24px; font-size: 20px; }
+    .question .question-container .question-btn li > div { padding: 20px; }
+    .question .question-container .question-btn li > div p { font-size: 20px; }
+    .question .question-container .question-text { padding-top: 0; }
+    .question .question-container .question-text .text-tit { font-size: 1.4rem; }
+    .question .question-container .question-text .text-tit br { display: block; }
+    .question .question-container .question-text-email-place .text-email input { width: 500px; margin: 0 0 15px 0; }
+    .question .question-container .question-text-email-place .text-email .sc-btn { 
+        display: block; margin: 0 auto; padding: 12px 18px; border-radius: 3px;
+    }
+}
+
+@media all and (max-width: 748px){
+    /* footer */
+    .footer .footer-infor .infor-link { width: 33.3333%; }
+}
+
+@media all and (max-width: 648px){
+    /* 로우 영역 */
+    .row { padding: 0 35px; }
+    
+    /* header */
+    #header::after { 
+        background: rgba(0, 0, 0, .2);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .9) 0%, transparent 60%, rgba(0, 0, 0, .9) 100%);
+    }
+
+    /* card-text */
+    #card-text { top: 70px; padding: 50px 0; }
+    .card-text { padding-top: 70px; }
+    .card-text .text-tit br { display: block; }
+    .card-text .text-subtit li { font-size: 1.6rem; font-weight: 400; }
+    .card-text .text-desc { font-size: 1.15rem; font-weight: 300; letter-spacing: 1px; line-height: 30px; }
+    .text-email-place { padding-bottom: 70px; margin-top: 15px; }
+    .text-email-place .text-email input { width: 100%; }
+
+    /* card-tv */
+    #card-tv { padding: 50px 0; }
+    .card-tv .card-tv-right .tv-animation-container { width: 90%; }
+
+    /* card-download */
+    #card-download { padding: 50px 0; }
+    .card-download .card-download-left { width: 85%; height: auto; }
+
+    /* card-watch */
+    #card-watch { padding: 50px 0; }
+
+    /* card-kids */
+    #card-kids { padding: 50px 0; }
+
+    /* question */
+    #question { padding: 50px 0; }
+    #question .row { padding: 0; }
+    .question .question-tit { font-size: 1.625rem; font-weight: 600; }
+    .question .question-container .question-btn { margin: 23px auto; width: 100%; }
+    .question .question-container .question-btn li > button { font-size: 18px; }
+    .question .question-container .question-btn li > div { padding: 20px; }
+    .question .question-container .question-btn li > div p { font-size: 18px; }
+    .question .question-container .question-text .text-tit { width: 80%; font-size: 1.2rem; font-weight: 300; margin: 0 auto; }
+    .question .question-container .question-text .text-tit br { display: none; }
+    .question .question-container .question-text-email-place .text-email input { width: 90%; padding: 13px 10px; }
+
+    /* footer */
+    #footer { padding: 50px 0 40px; }
+}
+
+@media all and (max-width: 480px){
+    /* 로우 영역 */
+    .row { padding: 0 20px; }
+
+    /* header */
+    #header { height: 82vh; }
+    #header::after { 
+        background: rgba(0, 0, 0, .2);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .9) 0%, transparent 60%, rgba(0, 0, 0, .9) 100%);
+    }
+    .header .nav #logo { width: 120px; }  
+    .header .nav .select { padding-top: 12px; margin-right: 10px; }
+    .header .nav .select #lang { padding: 5px 15px 5px 5px; }
+    .header .nav .login { padding-top: 18px; }
+    .header .nav .login a.login-btn { padding: 6px 10px; font-weight: 300; }
+
+    /* card-text */
+    .card-text { padding-top: 40px; }
+    .card-text .text-tit { font-size: 1.8rem; font-weight: 600; padding-bottom: 20px; }
+    .card-text .text-tit br { display: none; }
+    .card-text .text-subtit li { font-size: 1.2rem; font-weight: 300; }
+    .card-text .text-desc { font-size: 1.15rem; font-weight: 300; letter-spacing: 1px; line-height: 20px; }
+    .text-email-place { padding-bottom: 40px; }
+
+    /* card-tv */
+    .card-tv .card-tv-left .tv-tit { font-size: 1.625rem; }
+    .card-tv .card-tv-left .tv-subtit { font-size: 1.125rem; }
+
+    /* card-download */
+    .card-download .card-download-left { width: 100%; height: auto; }
+    .card-download .card-download-right .download-tit { width: 100%; font-size: 1.625rem; }
+    .card-download .card-download-right .download-subtit { font-size: 1.125rem; text-align: center; }
+
+    /* card-watch */
+    .card-watch .card-watch-left .watch-tit { font-size: 1.625rem; }
+    .card-watch .card-watch-left .watch-subtit { font-size: 1.125rem; }
+    .card-watch .card-watch-right { width: 100%; }
+
+    /* card-kids */
+    .card-kids .card-kids-right .kids-tit { font-size: 1.625rem; }
+    .card-kids .card-kids-right .kids-subtit { font-size: 1.125rem; }
+
+    /* footer */
+    .footer .footer-infor .infor-link { width: 50%; }
+}

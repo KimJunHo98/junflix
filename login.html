@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flix (학습용)</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/login_responsive.css" />
+
+        <!-- 웹 폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean" rel="stylesheet" />
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/0ac9b1c2eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- header -->
+            <header id="header">
+                <div class="header">
+                    <h1 class="logo">
+                        <a href="index.html">FLIX</a>
+                    </h1>
+                </div>
+            </header>
+            <!-- //header -->
+            <!-- main -->
+            <main>
+                <!-- login -->
+                <section id="login">
+                    <div class="container">
+                        <div class="row">
+                            <div class="login-wrap">
+                                <div class="login">
+                                    <h2 class="login-tit">로그인</h2>
+                                    <!-- login-form -->
+                                    <form id="login-form" name="login-form" action="post">
+                                        <fieldset>
+                                            <legend class="ir_so">로그인</legend>
+                                            <div class="login-content">
+                                                <h3 class="ir_so">로그인 영역</h3>
+                                                <div class="form-group">
+                                                    <input
+                                                        type="email"
+                                                        id="email"
+                                                        name="email"
+                                                        class="input-text"
+                                                        maxlength="20"
+                                                        required
+                                                    />
+                                                    <label for="email">이메일 주소 또는 전화번호</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input
+                                                        type="password"
+                                                        id="userpw"
+                                                        name="userpw"
+                                                        class="input-text"
+                                                        maxlength="20"
+                                                        required
+                                                    />
+                                                    <label for="userpw">비밀번호</label>
+                                                </div>
+                                                <button class="login-btn" type="submit" disabled>로그인</button>
+                                                <div class="remember">
+                                                    <div class="remember-left">
+                                                        <input type="checkbox" id="infor-check" />
+                                                        <label for="infor-heck">로그인 정보 저장</label>
+                                                    </div>
+                                                    <div class="remember-right">
+                                                        <a href="#">도움이 필요하신가요?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="signup">
+                                                    <p class="join">Flix 회원이 아니가요? <a href="#">지금 가입하세요</a>.</p>
+                                                    <p class="captcha">
+                                                        이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이 아님을 확인합니다.
+                                                        <a href="#">자세히 알아보기.</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <!-- //login-form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //login -->
+            </main>
+            <!-- //main -->
+            <!-- footer -->
+            <footer id="footer">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="footer">
+                            <h4 class="footer-top">질문이 있으신가요? 문의 전화: &nbsp;<a href="#">080-123-4567</a></h4>
+                            <ul class="footer-infor clearfix">
+                                <l1 class="infor-link"><a href="#">자주 묻는 질문</a></l1>
+                                <l1 class="infor-link"><a href="#">고객 센터</a></l1>
+                                <l1 class="infor-link"><a href="#">이용 약관</a></l1>
+                                <l1 class="infor-link"><a href="#">개인정보</a></l1>
+                                <l1 class="infor-link"><a href="#">쿠키설정</a></l1>
+                                <l1 class="infor-link"><a href="#">회사 정보</a></l1>
+                            </ul>
+                            <div class="ft-select">
+                                <label for="lang" class="ir_so">언어</label>
+                                <select id="lang" name="lang" class="lang-select">
+                                    <option selected="" lang="ko" value="/kr/" data-language="ko" data-country="KR">한국어</option>
+                                    <option lang="en" value="/kr-en/" data-language="en" data-country="KR">English</option>
+                                </select>
+                            </div>
+                            <div class="footer-copy">
+                                <ul>
+                                    <li>플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-가나다로-0426호 전화번호: 080-123-4567</li>
+                                    <li>대표: 김아무개</li>
+                                    <li>이메일 주소: example@naver.com</li>
+                                    <li>주소: 대한민국 서울특별시 종로구</li>
+                                    <li>사업자등록번호: 000-00-00000</li>
+                                    <li>클라우드 호스팅: junho Web Services Inc.</li>
+                                    <li>플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-가나다로-0426호 전화번호: 080-123-4567</li>
+                                    <li><a href="#">공정거래위원회 웹사이트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //footer -->
+        </div>
+
+        <!-- script -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
